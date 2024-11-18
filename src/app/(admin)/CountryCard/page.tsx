@@ -1,12 +1,12 @@
 import Link from 'next/link'
 
-type Props = {
+type CountryDetail = {
     name: string;
     population: number;
     capital: string;
 }
 
-const CountryCard = ({name,population,capital}: Props) => {
+const CountryDetail = ({name,population,capital}: CountryDetail) => {
   return (
     <div className="w-max py-8 m-auto font-bold text-white">
       <div className="text-4xl text-center text-white py-3"> {name}</div>
@@ -20,4 +20,4 @@ const CountryCard = ({name,population,capital}: Props) => {
   )
 }
 
-export default CountryCard
+export default CountryDetail
